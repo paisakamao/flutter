@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 33
@@ -9,12 +10,6 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-    }
-
-    signingConfigs {
-        debug {
-            // Use default debug signing for CI builds
-        }
     }
 
     buildTypes {
