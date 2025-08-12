@@ -1,5 +1,5 @@
 <activity
-    android:name=".MainActivity"
+    android:name="com.example.flutter_github_full_test.MainActivity"
     android:exported="true"
     android:launchMode="singleTop"
     android:theme="@style/LaunchTheme"
@@ -7,7 +7,7 @@
     android:hardwareAccelerated="true"
     android:windowSoftInputMode="adjustResize">
     <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
     </intent-filter>
 </activity>
