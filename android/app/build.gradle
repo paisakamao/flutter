@@ -4,10 +4,6 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 21
-    }
-}
-    defaultConfig {
         applicationId "com.example.flutter_github_full_test"
         minSdkVersion 21
         targetSdkVersion 33
