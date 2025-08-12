@@ -1,2 +1,2 @@
+rootProject.name = "flutter_github_full_test"
 include ':app'
-rootProject.name = 'flutter_github_full_test'
