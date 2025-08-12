@@ -1,3 +1,4 @@
+<activity android:name="io.flutter.app.FlutterActivity">
 <application
     android:label="flutter_github_full_test"
     android:icon="@mipmap/ic_launcher">
