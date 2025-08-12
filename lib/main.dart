@@ -10,26 +10,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'GitHub Flutter Test',
+      title: 'Flutter GitHub Actions Test',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const HomeScreen(),
+      home: const HomePage(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('GitHub Flutter Test')),
-      body: const Center(
-        child: Text(
-          'Hello Flutter from GitHub!',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
+      appBar: AppBar(title: const Text("GitHub Actions Test")),
+      body: const Center(child: Text("✅ Build Successful!")),
     );
   }
 }
