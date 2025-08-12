@@ -1,3 +1,6 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
 android {
     namespace "com.example.flutter_github_full_test"
     compileSdkVersion 33
@@ -10,9 +13,27 @@ android {
         versionName "1.0"
     }
 
+    signingConfigs {
+        debug {
+            storeFile file("${rootDir}/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
     buildTypes {
         release {
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.0"
 }
